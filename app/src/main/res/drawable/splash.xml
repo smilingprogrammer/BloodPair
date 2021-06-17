@@ -1,0 +1,13 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="200dp">
+    <item android:gravity="center" >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/primary" />
+        </shape>
+    </item>
+    <item>
+        <bitmap
+            android:tileMode="repeat"
+            android:src="@drawable/bloodhq" />
+    </item>
+
+</layer-list>
