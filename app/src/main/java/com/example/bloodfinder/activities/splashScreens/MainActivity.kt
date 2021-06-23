@@ -1,8 +1,9 @@
-package com.example.bloodfinder
+package com.example.bloodfinder.activities.splashScreens
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.bloodfinder.activities.auth.LoginActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,7 +12,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun moveToLogInScreen() {
-        startActivity(Intent(this, LoginActivity::class.java));
+        startActivity(Intent(this, SplashScreenSlideActivity::class.java));
         finish();
     }
 }
