@@ -1,15 +1,26 @@
 package com.example.bloodfinder.activities.splashScreens
 
+import android.content.Intent
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.bloodfinder.activities.auth.LoginActivity
 import com.example.bloodfinder.databinding.ActivitySplashItemBinding
 
-class SplashScreenViewPagerAdapter(private var slideText: List<String>): RecyclerView.Adapter<SplashScreenViewPagerAdapter.ViewHolder>() {
+class SplashScreenViewPagerAdapter(private var images: List<Int>): RecyclerView.Adapter<SplashScreenViewPagerAdapter.ViewHolder>() {
 
     inner class ViewHolder(private var binding: ActivitySplashItemBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun setText(text: String){
-            binding.txvText.text = text
+        fun setText(image: Int, position: Int){
+            binding.IvImage.setImageResource(image)
+
+            // If last slide show start button
+            if(position == 2) binding.btnStart.visibility = View.VISIBLE
+
+            binding.btnStart.setOnClickListener{v ->
+                val intent = Intent(v.context, LoginActivity::class.java)
+                v.context.startActivity(intent)
+            }
         }
     }
 
@@ -18,12 +29,12 @@ class SplashScreenViewPagerAdapter(private var slideText: List<String>): Recycle
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val viewText = slideText[position]
-        holder.setText(viewText)
+        val image = images[position]
+        holder.setText(image, position)
     }
 
     override fun getItemCount(): Int {
-        return slideText.size
+        return images.size
     }
 
 }
