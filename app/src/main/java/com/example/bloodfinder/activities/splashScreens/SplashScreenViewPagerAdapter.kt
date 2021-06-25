@@ -11,7 +11,7 @@ import com.example.bloodfinder.databinding.ActivitySplashItemBinding
 class SplashScreenViewPagerAdapter(private var images: List<Int>): RecyclerView.Adapter<SplashScreenViewPagerAdapter.ViewHolder>() {
 
     inner class ViewHolder(private var binding: ActivitySplashItemBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun setText(image: Int, position: Int){
+        fun setSlide(image: Int, position: Int){
             binding.IvImage.setImageResource(image)
 
             // If last slide show start button
@@ -30,7 +30,7 @@ class SplashScreenViewPagerAdapter(private var images: List<Int>): RecyclerView.
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val image = images[position]
-        holder.setText(image, position)
+        holder.setSlide(image, position)
     }
 
     override fun getItemCount(): Int {
