@@ -76,8 +76,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/gray"
-                        android:hint="@string/email_address"
-                        android:inputType="textEmailAddress" />
+                        android:hint="@string/password"
+                        android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
 
             </androidx.cardview.widget.CardView>
@@ -89,6 +89,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="@dimen/pad2"
+            android:id="@+id/txv_forgot_password"
             android:text="@string/forgot_password"
             android:textColor="@color/white" />
 
@@ -106,7 +107,7 @@
                 app:cardCornerRadius="@dimen/pad2">
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/signin_button"
+                    android:id="@+id/btn_signin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/secondary"
@@ -146,5 +147,75 @@
                 android:layout_weight="5"
                 android:background="@color/gray" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginVertical="30dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/twitter"
+                    android:src="@drawable/twitter_logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/facebook"
+                    android:src="@drawable/facebook_logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/instagram"
+                    android:src="@drawable/instagram_logo" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/not_a_user_yet"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txv_sign_up"
+                android:layout_gravity="center"
+                android:text="@string/sign_up"
+                android:textColor="@color/secondary" />
+        </LinearLayout>
+
     </LinearLayout>
 </ScrollView>
