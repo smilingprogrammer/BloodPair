@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
         android:paddingHorizontal="@dimen/pad2">
@@ -19,13 +19,77 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="32dp"
             android:src="@drawable/bloodhq_logo"
-            android:textColor="@color/design_default_color_primary"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:contentDescription="@string/blood_hq_logo"/>
+
+<!-- Hospital Name -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/secondary"
+            app:cardCornerRadius="@dimen/pad2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                app:cardCornerRadius="@dimen/pad2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/hospital_name_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/hospital_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray"
+                        android:hint="@string/hospital_name"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+<!--        Location-->
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad1"
+            android:backgroundTint="@color/secondary"
+            app:cardCornerRadius="@dimen/pad2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                app:cardCornerRadius="@dimen/pad2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/location_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray"
+                        android:hint="@string/location"
+                        android:inputType="text|textCapWords" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+<!--Enter email-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad1"
             android:backgroundTint="@color/secondary"
             app:cardCornerRadius="@dimen/pad2">
 
@@ -53,6 +117,7 @@
 
         </androidx.cardview.widget.CardView>
 
+<!--  Password-->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -76,21 +141,70 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/gray"
-                        android:hint="@string/email_address"
-                        android:inputType="textEmailAddress" />
+                        android:hint="@string/password"
+                        android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
 
             </androidx.cardview.widget.CardView>
 
         </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:layout_width="wrap_content"
+ <!--  Confirm password-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="@dimen/pad2"
-            android:text="@string/forgot_password"
-            android:textColor="@color/white" />
+            android:layout_marginTop="@dimen/pad1"
+            android:backgroundTint="@color/secondary"
+            app:cardCornerRadius="@dimen/pad2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                app:cardCornerRadius="@dimen/pad2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/password_confirm_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray"
+                        android:hint="@string/password_confirm"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+<!--  Already Have an account text   -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/have_an_account"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txv_sign_up"
+                android:layout_gravity="center"
+                android:text="@string/sign_in2"
+                android:textColor="@color/secondary" />
+        </LinearLayout>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
