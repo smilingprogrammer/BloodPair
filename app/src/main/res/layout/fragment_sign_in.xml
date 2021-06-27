@@ -18,10 +18,7 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/blood_hq_logo"
             android:layout_marginVertical="32dp"
-            android:src="@drawable/bloodhq_logo"
-            android:textColor="@color/design_default_color_primary"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:src="@drawable/bloodhq_logo" />
 
 <!--   Text input for email and password -->
 
