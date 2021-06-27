@@ -206,6 +206,8 @@
                 android:textColor="@color/secondary" />
         </LinearLayout>
 
+<!--Sign Up button-->
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -225,7 +227,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/secondary"
                     android:padding="10dp"
-                    android:text="@string/sign_in" />
+                    android:text="@string/sign_up" />
 
             </androidx.cardview.widget.CardView>
 
