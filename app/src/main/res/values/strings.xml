@@ -14,4 +14,9 @@
     <string name="twitter_logo">twitter logo</string>
     <string name="facebook_logo">facebook logo</string>
     <string name="insta">instagram logo</string>
+    <string name="have_an_account">Have an account? </string>
+    <string name="sign_in2">Sign in</string>
+    <string name="password_confirm">Confirm password</string>
+    <string name="location">Location</string>
+    <string name="hospital_name">Hospital or Lab Name</string>
 </resources>
