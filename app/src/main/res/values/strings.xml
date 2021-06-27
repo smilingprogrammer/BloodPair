@@ -9,4 +9,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="not_a_user_yet">Not a user yet? </string>
     <string name="sign_up">Sign up</string>
+    <string name="blood_hq_logo">Blood Hq Logo</string>
+    <string name="or">OR</string>
+    <string name="twitter_logo">twitter logo</string>
+    <string name="facebook_logo">facebook logo</string>
+    <string name="insta">instagram logo</string>
 </resources>
