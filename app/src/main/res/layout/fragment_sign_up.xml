@@ -11,13 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="vertical"
-        android:paddingHorizontal="@dimen/pad2">
+        android:paddingHorizontal="@dimen/pad2"
+        android:orientation="vertical">
 
         <ImageView
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="32dp"
+            android:layout_marginBottom="32dp"
             android:src="@drawable/bloodhq_logo"
             android:contentDescription="@string/blood_hq_logo"/>
 
@@ -31,13 +31,17 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray"
                 android:layout_margin="2dp"
                 app:cardCornerRadius="@dimen/pad2">
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/hospital_name_container"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="-2dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/hospital_name"
@@ -64,13 +68,17 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray"
                 android:layout_margin="2dp"
                 app:cardCornerRadius="@dimen/pad2">
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/location_container"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="-2dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/location"
@@ -96,13 +104,17 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray"
                 android:layout_margin="2dp"
                 app:cardCornerRadius="@dimen/pad2">
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/email_container"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="-2dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/email"
@@ -128,13 +140,18 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray"
+                android:background="@color/gray"
                 android:layout_margin="2dp"
                 app:cardCornerRadius="@dimen/pad2">
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/password_container"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="-2dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/password"
@@ -160,13 +177,17 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray"
                 android:layout_margin="2dp"
                 app:cardCornerRadius="@dimen/pad2">
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/password_confirm_container"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="-2dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/password_confirm"
@@ -187,7 +208,7 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:gravity="center"
-            android:layout_margin="20dp"
+            android:layout_marginVertical="@dimen/pad1"
             android:orientation="horizontal">
 
             <TextView

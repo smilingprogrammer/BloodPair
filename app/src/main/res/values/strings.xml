@@ -19,4 +19,7 @@
     <string name="password_confirm">Confirm password</string>
     <string name="location">Location</string>
     <string name="hospital_name">Hospital or Lab Name</string>
+    <string name="forgot_password_text">Enter your phone number, an sms containing a verification pin will be sent to you.</string>
+    <string name="enter_number">Your number</string>
+    <string name="update_password">Update Password</string>
 </resources>

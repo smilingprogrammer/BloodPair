@@ -13,8 +13,10 @@
         android:theme="@style/Theme.BloodFinder">
         <activity
             android:name=".activities.splashScreens.SplashScreenSlideActivity"
-            android:theme="@style/Theme.BloodFinderSplash"></activity>
-        <activity android:name=".activities.auth.LoginActivity" />
+            android:theme="@style/Theme.BloodFinderSplash"/>
+        <activity
+            android:name=".activities.auth.LoginActivity"
+            android:theme="@style/Theme.BloodFinderSplash"/>
         <activity
             android:name=".activities.splashScreens.MainActivity"
             android:launchMode="singleTask"
