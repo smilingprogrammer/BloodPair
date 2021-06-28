@@ -1,11 +1,17 @@
 package com.example.bloodfinder.activities.auth.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.Toolbar
+import androidx.navigation.Navigation
 import com.example.bloodfinder.R
+import com.example.bloodfinder.activities.splashScreens.MainActivity
+import com.example.bloodfinder.databinding.FragmentSignInBinding
+import com.example.bloodfinder.databinding.FragmentSignUpBinding
 
 class SignUpFragment : Fragment() {
     override fun onCreateView(
@@ -13,6 +19,17 @@ class SignUpFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sign_up, container, false)
+        val binding = FragmentSignUpBinding.inflate(LayoutInflater.from(container?.context))
+
+        binding.apply {
+
+        }
+
+        // Set Toolbar title
+        val toolbar: Toolbar = requireActivity().findViewById<View>(R.id.toolbar) as Toolbar
+        toolbar.setTitle("Sign Up")
+
+        // Return binding root
+        return binding.root
     }
 }

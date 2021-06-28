@@ -22,4 +22,6 @@
     <string name="forgot_password_text">Enter your phone number, an sms containing a verification pin will be sent to you.</string>
     <string name="enter_number">Your number</string>
     <string name="update_password">Update Password</string>
+    <string name="enter_phonenumber">Enter your phone number below, we will send you an sms with a pin code to confirm your identity</string>
+    <string name="reset_password">reset password</string>
 </resources>
