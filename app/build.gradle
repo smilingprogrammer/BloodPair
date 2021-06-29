@@ -42,6 +42,7 @@ dependencies {
     def room_version = "2.3.0"
     def lifecycle_version = "2.3.1"
     def arch_version = "2.1.0"
+    def nav_version = "2.3.5"
 
     // ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
@@ -77,9 +78,9 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-    // Android navigation
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+    // Kotlin
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
 
     // Retrofit
     implementation "com.squareup.retrofit2:retrofit:2.9.0"
