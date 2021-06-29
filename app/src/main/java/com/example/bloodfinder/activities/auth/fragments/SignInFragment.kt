@@ -2,15 +2,17 @@ package com.example.bloodfinder.activities.auth.fragments
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
+import androidx.appcompat.widget.Toolbar
+import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
-import androidx.navigation.findNavController
 import com.example.bloodfinder.R
 import com.example.bloodfinder.activities.splashScreens.MainActivity
 import com.example.bloodfinder.databinding.FragmentSignInBinding
+
 
 class SignInFragment : Fragment() {
     override fun onCreateView(
@@ -39,6 +41,13 @@ class SignInFragment : Fragment() {
                 )
             )
         }
+
+        // Set Toolbar title
+        val toolbar: Toolbar = requireActivity().findViewById<View>(R.id.toolbar) as Toolbar
+        var titleText: TextView = toolbar.findViewById<View>(R.id.toolbar_title_text) as TextView
+        titleText.text = ("Sign In")
+
+        // Return binding root
         return binding.root
     }
 }
