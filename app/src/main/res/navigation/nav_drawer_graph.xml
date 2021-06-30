@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.bloodfinder.activities.home.fragments.HomeFragment"
-        android:label="fragment_home"
+        android:label="Home"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_updateProfileFragment"
@@ -38,22 +38,22 @@
     <fragment
         android:id="@+id/updateProfileFragment"
         android:name="com.example.bloodfinder.activities.home.fragments.UpdateProfileFragment"
-        android:label="fragment_update_profile"
+        android:label="Update Profile"
         tools:layout="@layout/fragment_update_profile" />
     <fragment
         android:id="@+id/trackOrderFragment"
         android:name="com.example.bloodfinder.activities.home.fragments.TrackOrderFragment"
-        android:label="fragment_track_order"
+        android:label="Track Order"
         tools:layout="@layout/fragment_track_order" />
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.bloodfinder.activities.home.fragments.ProfileFragment"
-        android:label="fragment_profile"
+        android:label="Profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.example.bloodfinder.activities.home.fragments.SearchFragment"
-        android:label="fragment_search"
+        android:label="Search"
         tools:layout="@layout/fragment_search" >
         <action
             android:id="@+id/action_searchFragment_to_shoppingCartFragment"
@@ -62,22 +62,22 @@
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.bloodfinder.activities.home.fragments.SettingsFragment"
-        android:label="fragment_settings"
+        android:label="Settings"
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/helpFragment"
         android:name="com.example.bloodfinder.activities.home.fragments.HelpFragment"
-        android:label="fragment_help"
+        android:label="Help"
         tools:layout="@layout/fragment_help" />
     <fragment
         android:id="@+id/confirmDeliveryFragment"
         android:name="com.example.bloodfinder.activities.home.fragments.ConfirmDeliveryFragment"
-        android:label="fragment_confirm_delivery"
+        android:label="Confirm Delivery"
         tools:layout="@layout/fragment_confirm_delivery" />
     <fragment
         android:id="@+id/shoppingCartFragment"
         android:name="com.example.bloodfinder.activities.home.fragments.cart.ShoppingCartFragment"
-        android:label="fragment_shopping_cart"
+        android:label="Shopping Cart"
         tools:layout="@layout/fragment_shopping_cart" >
         <action
             android:id="@+id/action_shoppingCartFragment_to_deliveryAddressFragment"
@@ -86,7 +86,7 @@
     <fragment
         android:id="@+id/deliveryAddressFragment"
         android:name="com.example.bloodfinder.activities.home.fragments.cart.DeliveryAddressFragment"
-        android:label="fragment_delivery_address"
+        android:label="Delivery Address"
         tools:layout="@layout/fragment_delivery_address" >
         <action
             android:id="@+id/action_deliveryAddressFragment_to_paymentFragment"
@@ -95,7 +95,7 @@
     <fragment
         android:id="@+id/paymentFragment"
         android:name="com.example.bloodfinder.activities.home.fragments.cart.PaymentFragment"
-        android:label="fragment_payment"
+        android:label="Payment"
         tools:layout="@layout/fragment_payment" >
         <action
             android:id="@+id/action_paymentFragment_to_orderProcessedFragment"
@@ -104,7 +104,7 @@
     <fragment
         android:id="@+id/orderProcessedFragment"
         android:name="com.example.bloodfinder.activities.home.fragments.cart.OrderProcessedFragment"
-        android:label="fragment_order_processed"
+        android:label="Order Processed"
         tools:layout="@layout/fragment_order_processed" >
         <action
             android:id="@+id/action_orderProcessedFragment_to_homeFragment"

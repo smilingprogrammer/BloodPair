@@ -10,6 +10,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.example.bloodfinder.R
+import com.example.bloodfinder.activities.home.HomeActivity
 import com.example.bloodfinder.activities.splashScreens.MainActivity
 import com.example.bloodfinder.databinding.FragmentSignInBinding
 
@@ -25,7 +26,7 @@ class SignInFragment : Fragment() {
         binding.apply {
             // Sign in when sign in botton is clicked
             btnSignin.setOnClickListener{v ->
-                val intent = Intent(v.context,MainActivity::class.java)
+                val intent = Intent(v.context,HomeActivity::class.java)
                 v.context.startActivity(intent)
             }
             // Navigate to sign up fragment when sign up text is clicked
@@ -41,11 +42,6 @@ class SignInFragment : Fragment() {
                 )
             )
         }
-
-        // Set Toolbar title
-        val toolbar: Toolbar = requireActivity().findViewById<View>(R.id.toolbar) as Toolbar
-        var titleText: TextView = toolbar.findViewById<View>(R.id.toolbar_title_text) as TextView
-        titleText.text = ("Sign In")
 
         // Return binding root
         return binding.root

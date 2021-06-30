@@ -7,7 +7,7 @@
     <fragment
         android:id="@+id/signInFragment"
         android:name="com.example.bloodfinder.activities.auth.fragments.SignInFragment"
-        android:label="SignInFragment" >
+        android:label="Sign In" >
         <action
             android:id="@+id/action_signInFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
@@ -21,7 +21,7 @@
     <fragment
         android:id="@+id/signUpFragment"
         android:name="com.example.bloodfinder.activities.auth.fragments.SignUpFragment"
-        android:label="SignUpFragment" >
+        android:label="Sign Up" >
         <action
             android:id="@+id/action_signUpFragment_to_signInFragment"
             app:destination="@id/signInFragment" />
@@ -29,7 +29,7 @@
     <fragment
         android:id="@+id/verificationFragment"
         android:name="com.example.bloodfinder.activities.auth.fragments.VerificationFragment"
-        android:label="VerificationFragment" >
+        android:label="Verification" >
         <action
             android:id="@+id/action_verificationFragment_to_signInFragment"
             app:destination="@id/signInFragment" />
@@ -37,5 +37,5 @@
     <fragment
         android:id="@+id/forgotPasswordFragment"
         android:name="com.example.bloodfinder.activities.auth.fragments.ForgotPasswordFragment"
-        android:label="ForgotPasswordFragment" />
+        android:label="Password Resset" />
 </navigation>

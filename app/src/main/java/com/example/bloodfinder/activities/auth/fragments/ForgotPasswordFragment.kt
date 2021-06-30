@@ -25,10 +25,6 @@ class ForgotPasswordFragment : Fragment() {
 
         }
 
-        // Set Toolbar title
-        val toolbar: Toolbar = requireActivity().findViewById<View>(R.id.toolbar) as Toolbar
-        toolbar.setTitle("Reset Password")
-
         // Return binding root
         return binding.root
     }
