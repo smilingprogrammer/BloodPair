@@ -24,4 +24,9 @@
     <string name="update_password">Update Password</string>
     <string name="enter_phonenumber">Enter your phone number below, we will send you an sms with a pin code to confirm your identity</string>
     <string name="reset_password">reset password</string>
+    <string name="home">Home</string>
+    <string name="update_records">Update Records</string>
+    <string name="track_order">Track Order</string>
+    <string name="confirm_delivery">Confirm Delivery</string>
+    <string name="settings">Settings</string>
 </resources>
