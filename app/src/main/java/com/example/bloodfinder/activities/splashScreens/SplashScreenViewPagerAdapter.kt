@@ -14,8 +14,13 @@ class SplashScreenViewPagerAdapter(private var images: List<Int>): RecyclerView.
         fun setSlide(image: Int, position: Int){
             binding.IvImage.setImageResource(image)
 
-            // If last slide show start button
-            if(position == 2) binding.btnStart.visibility = View.VISIBLE
+            // If last slide show start button text and fade image
+            if(position == 2){
+                binding.btnStart.visibility = View.VISIBLE
+                binding.txvAbout.visibility = View.VISIBLE
+                binding.txvText.visibility = View.VISIBLE
+                binding.IvImage.alpha = 0.3F
+            }
 
             binding.btnStart.setOnClickListener{v ->
                 val intent = Intent(v.context, LoginActivity::class.java)

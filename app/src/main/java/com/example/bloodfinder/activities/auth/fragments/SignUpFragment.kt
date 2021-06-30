@@ -25,10 +25,6 @@ class SignUpFragment : Fragment() {
 
         }
 
-        // Set Toolbar title
-        val toolbar: Toolbar = requireActivity().findViewById<View>(R.id.toolbar) as Toolbar
-        toolbar.setTitle("Sign Up")
-
         // Return binding root
         return binding.root
     }

@@ -14,8 +14,6 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        setSupportActionBar(binding.toolbar)
-        supportActionBar!!.setDisplayShowTitleEnabled(false)
 
         // Get navHost from Support Fragment Manager to access the navController
         val navHost = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment

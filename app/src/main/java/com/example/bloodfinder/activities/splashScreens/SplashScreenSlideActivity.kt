@@ -20,7 +20,7 @@ class SplashScreenSlideActivity : AppCompatActivity() {
     }
 
     fun setData(){
-        val images = arrayListOf(R.drawable.bloodhq, R.drawable.image1, R.drawable.image2)
+        val images = arrayListOf(R.drawable.bloodhq, R.drawable.redbloodcells, R.drawable.image24)
         binding.splashScreens.adapter = SplashScreenViewPagerAdapter(images)
         binding.circles.setViewPager(binding.splashScreens)
     }

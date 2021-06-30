@@ -26,10 +26,6 @@ class VerificationFragment : Fragment() {
 
         }
 
-        // Set Toolbar title
-        val toolbar: Toolbar = requireActivity().findViewById<View>(R.id.toolbar) as Toolbar
-        toolbar.setTitle("Verification")
-
         // Return binding root
         return binding.root
     }
