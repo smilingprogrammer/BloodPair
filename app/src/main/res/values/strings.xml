@@ -40,4 +40,6 @@
     <string name="about">About</string>
     <string name="bloodQuality">Blood Quality</string>
     <string name="register">Register</string>
+    <string name="your_cart">Your cart</string>
+    <string name="items">2 Items</string>
 </resources>
