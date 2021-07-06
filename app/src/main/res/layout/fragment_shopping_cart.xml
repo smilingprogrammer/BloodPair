@@ -54,7 +54,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="24dp"
         app:cardBackgroundColor="#122332"
         app:cardElevation="5dp"
         app:layout_constraintEnd_toEndOf="@+id/cardView"
@@ -63,11 +63,11 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:paddingTop="10dp"
+            android:layout_height="wrap_content"
             android:paddingStart="19dp"
+            android:paddingTop="10dp"
             android:paddingEnd="10dp"
-            android:paddingBottom="11dp"
-            android:layout_height="wrap_content">
+            android:paddingBottom="11dp">
 
             <ImageView
                 android:id="@+id/lab_img"
@@ -84,8 +84,8 @@
                 android:layout_marginStart="11dp"
                 android:fontFamily="@font/dmsans_bold"
                 android:text="@string/perry_lab"
-                android:textSize="15sp"
                 android:textAppearance="@style/your_cart"
+                android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="@+id/lab_img"
                 app:layout_constraintStart_toEndOf="@+id/lab_img"
                 app:layout_constraintTop_toTopOf="@+id/lab_img" />
@@ -94,8 +94,8 @@
                 android:layout_width="31dp"
                 android:layout_height="33dp"
                 android:layout_marginTop="8dp"
-                app:cardElevation="5dp"
                 app:cardBackgroundColor="#04172A"
+                app:cardElevation="5dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/lab_img">
 
@@ -112,12 +112,12 @@
                 android:id="@+id/description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="45dp"
+                android:fontFamily="@font/dmsans_regular"
                 android:text="@string/description"
                 android:textAppearance="@style/your_cart"
-                android:fontFamily="@font/dmsans_regular"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@+id/lab_name"
+                app:layout_constraintEnd_toStartOf="@+id/pop_up_menu"
                 app:layout_constraintStart_toEndOf="@+id/lab_name"
                 app:layout_constraintTop_toTopOf="@+id/lab_name" />
 
@@ -142,9 +142,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:fontFamily="@font/dmsans_regular"
                 android:text="@string/pints_of"
                 android:textAppearance="@style/your_cart"
-                android:fontFamily="@font/dmsans_regular"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="@+id/description"
                 app:layout_constraintStart_toStartOf="@+id/description"
@@ -154,13 +154,13 @@
                 android:id="@+id/blood_group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/dmsans_regular"
                 android:text="@string/opositive"
                 android:textAppearance="@style/your_cart"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView"
                 app:layout_constraintEnd_toEndOf="@+id/description"
                 app:layout_constraintStart_toEndOf="@+id/textView"
-                android:fontFamily="@font/dmsans_regular"
                 app:layout_constraintTop_toTopOf="@+id/textView" />
 
             <TextView
@@ -168,13 +168,63 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="@string/thirty_thousand"
                 android:fontFamily="@font/dmsans_regular"
+                android:text="@string/thirty_thousand"
                 android:textAppearance="@style/your_cart"
                 android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@+id/blood_group"
                 app:layout_constraintStart_toStartOf="@+id/no_of_pints"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <ImageView
+                android:id="@+id/pop_up_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="86dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+
+            <ImageView
+                android:id="@+id/editImg"
+                android:layout_width="11dp"
+                android:layout_height="17dp"
+                android:textAlignment="textEnd"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/blood_price"
+                app:srcCompat="@drawable/ic_baseline_edit_24" />
+
+            <TextView
+                android:id="@+id/editTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/edit"
+                android:textAppearance="@style/your_cart"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/editImg" />
+
+            <ImageView
+                android:id="@+id/removeImg"
+                android:layout_width="11dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/editTxt"
+                app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24" />
+
+            <TextView
+                android:id="@+id/removeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/remove"
+                android:textAppearance="@style/your_cart"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/removeImg"
+                app:layout_constraintTop_toTopOf="@id/removeImg" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
