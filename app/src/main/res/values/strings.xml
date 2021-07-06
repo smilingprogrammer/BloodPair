@@ -40,4 +40,44 @@
     <string name="about">About</string>
     <string name="bloodQuality">Blood Quality</string>
     <string name="register">Register</string>
+
+    <!--Search Fragment-->
+    <string name="searchFragmentTextHeader">Search for blood types, lab info, med lab etc.</string>
+    <string name="searchBarHint">Search for blood…</string>
+    <string name="searchFragmentCardPint">Available Pints</string>
+    <string name="searchFragmentCardBloodGroup">Blood Groups</string>
+    <string name="searchFragmentCardManualSearch">Manual Search</string>
+    <string name="searchFragmentItemPrice">Price</string>
+    <string name="searchFragmentItemAmount">Amount</string>
+    <string name="searchFragmentAddButton">Add to cart</string>
+    <string name="searchFragmentItemInfo">Info</string>
+    <string name="searchFragmentItemLab">Lab: Assured Life</string>
+    <string name="searchFragmentItemBloodType">Blood type: O+</string>
+    <string name="searchFragmentItemDonate">Can donate to: O+ B+ A+ AB+</string>
+    <string name="searchFragmentItemReceive">Can receive from: O+ O-</string>
+    <string name="searchFragmentItemPints">Pints Available: 6</string>
+
+    <!--Delivery Address Fragment-->
+    <string name="deliveryFragmentPaymentBtn">Proceed to Payment</string>
+    <string name="deliveryFragmentCardTitle">Work</string>
+    <string name="deliveryFragmentCardName">Perry Lab</string>
+    <string name="deliveryFragmentCardPhone">+234 702 2334 466</string>
+    <string name="deliveryFragmentCardDescription">Description</string>
+    <string name="deliveryFragmentCardPints">2 pints of O+</string>
+    <string name="deliveryFragmentCardAmount">N30,000.00</string>
+    <string name="deliveryFragmentTitle">Checkout (1/3)</string>
+    <string name="deliveryFragmentAddressBtn">Add new address</string>
+    <string name="deliveryFragmentSelectAddress">Select new address</string>
+
+    <!--Payment Fragment-->
+    <string name="paymentFragmentTitle">Checkout (2/3)</string>
+    <string name="paymentFragmentSelectMethod">Select payment method</string>
+    <string name="paymentFragmentSelectPaymentCardTitle">Credit Card</string>
+    <string name="paymentFragmentSelectPaymentCardName">Thompson</string>
+    <string name="paymentFragmentSelectPaymentCardNumber">3456 7684 2345 ****</string>
+    <string name="paymentFragmentSelectPaymentCardExpiry">Expiry: 12/23</string>
+    <string name="paymentFragmentSelectPaymentCashTitle">Cash on delivery</string>
+    <string name="paymentFragmentPlaceOrder">Place Order</string>
+    <string name="paymentFragmentPlaceOrderText">N77,500.00</string>
+
 </resources>
