@@ -42,4 +42,10 @@
     <string name="register">Register</string>
     <string name="your_cart">Your cart</string>
     <string name="items">2 Items</string>
+    <string name="perry_lab">Perry\'s Lab</string>
+    <string name="description">Description</string>
+    <string name="pints_of">pints of</string>
+    <string name="two">2</string>
+    <string name="opositive">O+</string>
+    <string name="thirty_thousand">N30,000.00</string>
 </resources>
