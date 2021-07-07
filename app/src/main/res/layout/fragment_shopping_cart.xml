@@ -29,26 +29,23 @@
 
             <TextView
                 android:id="@+id/your_cart"
-                style="@style/your_cart"
+                style="@style/shoppingCart_your_cart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/dmsans_regular"
-                android:text="@string/your_cart"
-                android:textAppearance="@style/your_cart" />
+                android:text="@string/shoppingCart_your_cart"
+                android:textAppearance="@style/shoppingCart_your_cart" />
 
             <TextView
                 android:id="@+id/no_of_items"
-                style="@style/your_cart"
+                style="@style/shoppingCart_your_cart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:background="@drawable/items_background"
-                android:fontFamily="@font/dmsans_regular"
                 android:padding="3dp"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:layout_marginBottom="5dp"
-                android:text="@string/items" />
+                android:text="@string/shoppingCart_items" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -84,9 +81,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="11dp"
-                android:fontFamily="@font/dmsans_bold"
-                android:text="@string/perry_lab"
-                android:textAppearance="@style/your_cart"
+                android:text="@string/shoppingCart_perry_lab"
+                android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="@+id/lab_img"
                 app:layout_constraintStart_toEndOf="@+id/lab_img"
@@ -105,8 +101,7 @@
                     android:id="@+id/blood_drop"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="6dp"
-                    app:srcCompat="@drawable/ic_blood_drop" />
+                    android:padding="6dp" />
 
             </androidx.cardview.widget.CardView>
 
@@ -114,9 +109,8 @@
                 android:id="@+id/description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/dmsans_regular"
-                android:text="@string/description"
-                android:textAppearance="@style/your_cart"
+                android:text="@string/shoppingCart_description"
+                android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@+id/lab_name"
                 app:layout_constraintEnd_toStartOf="@+id/pop_up_menu"
@@ -128,9 +122,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
-                android:fontFamily="@font/dmsans_regular"
-                android:text="@string/two"
-                android:textAppearance="@style/your_cart"
+                android:text="@string/shoppingCart_two"
+                android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView"
                 app:layout_constraintEnd_toStartOf="@+id/textView"
@@ -144,9 +137,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/dmsans_regular"
-                android:text="@string/pints_of"
-                android:textAppearance="@style/your_cart"
+                android:text="@string/shoppingCart_pints_of"
+                android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="@+id/description"
                 app:layout_constraintStart_toStartOf="@+id/description"
@@ -156,9 +148,8 @@
                 android:id="@+id/blood_group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/dmsans_regular"
-                android:text="@string/opositive"
-                android:textAppearance="@style/your_cart"
+                android:text="@string/shoppingCart_opositive"
+                android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView"
                 app:layout_constraintEnd_toEndOf="@+id/description"
@@ -170,9 +161,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:fontFamily="@font/dmsans_regular"
-                android:text="@string/thirty_thousand"
-                android:textAppearance="@style/your_cart"
+                android:text="@string/shoppingCart_thirty_thousand"
+                android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="@+id/no_of_pints"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -184,8 +174,7 @@
                 android:layout_marginBottom="86dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/editImg"
@@ -193,16 +182,15 @@
                 android:layout_height="17dp"
                 android:textAlignment="textEnd"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@id/blood_price"
-                app:srcCompat="@drawable/ic_baseline_edit_24" />
+                app:layout_constraintStart_toStartOf="@id/blood_price" />
 
             <TextView
                 android:id="@+id/editTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="@string/edit"
-                android:textAppearance="@style/your_cart"
+                android:text="@string/shoppingCart_edit"
+                android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/editImg" />
@@ -213,16 +201,15 @@
                 android:layout_height="17dp"
                 android:layout_marginStart="12dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/editTxt"
-                app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24" />
+                app:layout_constraintStart_toEndOf="@+id/editTxt" />
 
             <TextView
                 android:id="@+id/removeTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="@string/remove"
-                android:textAppearance="@style/your_cart"
+                android:text="@string/shoppingCart_remove"
+                android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/removeImg"
@@ -264,9 +251,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="11dp"
-                android:fontFamily="@font/dmsans_bold"
-                android:text="@string/assured_life"
-                android:textAppearance="@style/your_cart"
+                android:text="@string/shoppingCart_assured_life"
+                android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="@+id/lab_img2"
                 app:layout_constraintStart_toEndOf="@+id/lab_img2"
@@ -284,8 +270,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="6dp"
-                    app:srcCompat="@drawable/ic_blood_drop" />
+                    android:padding="6dp" />
 
             </androidx.cardview.widget.CardView>
 
@@ -293,9 +278,8 @@
                 android:id="@+id/description2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/dmsans_regular"
-                android:text="@string/description"
-                android:textAppearance="@style/your_cart"
+                android:text="@string/shoppingCart_description"
+                android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@+id/lab_name2"
                 app:layout_constraintEnd_toStartOf="@+id/pop_up_menu2"
@@ -307,9 +291,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
-                android:fontFamily="@font/dmsans_regular"
-                android:text="@string/three"
-                android:textAppearance="@style/your_cart"
+                android:text="@string/shoppingCart_three"
+                android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView2"
                 app:layout_constraintEnd_toStartOf="@+id/textView2"
@@ -323,9 +306,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/dmsans_regular"
-                android:text="@string/pints_of"
-                android:textAppearance="@style/your_cart"
+                android:text="@string/shoppingCart_pints_of"
+                android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="@+id/description2"
                 app:layout_constraintStart_toStartOf="@+id/description2"
@@ -335,9 +317,8 @@
                 android:id="@+id/blood_group2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/dmsans_regular"
-                android:text="@string/opositive"
-                android:textAppearance="@style/your_cart"
+                android:text="@string/shoppingCart_opositive"
+                android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView2"
                 app:layout_constraintEnd_toEndOf="@+id/description2"
@@ -349,9 +330,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:fontFamily="@font/dmsans_regular"
-                android:text="@string/thirty_thousand"
-                android:textAppearance="@style/your_cart"
+                android:text="@string/shoppingCart_thirty_thousand"
+                android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="@+id/no_of_pints2"
                 app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -363,8 +343,7 @@
                 android:layout_marginBottom="86dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/editImg2"
@@ -372,16 +351,15 @@
                 android:layout_height="17dp"
                 android:textAlignment="textEnd"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@id/blood_price2"
-                app:srcCompat="@drawable/ic_baseline_edit_24" />
+                app:layout_constraintStart_toStartOf="@id/blood_price2" />
 
             <TextView
                 android:id="@+id/editTxt2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="@string/edit"
-                android:textAppearance="@style/your_cart"
+                android:text="@string/shoppingCart_edit"
+                android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/editImg2" />
@@ -392,16 +370,15 @@
                 android:layout_height="17dp"
                 android:layout_marginStart="12dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/editTxt2"
-                app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24" />
+                app:layout_constraintStart_toEndOf="@+id/editTxt2" />
 
             <TextView
                 android:id="@+id/removeTxt2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="@string/remove"
-                android:textAppearance="@style/your_cart"
+                android:text="@string/shoppingCart_remove"
+                android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/removeImg2"
@@ -417,8 +394,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
         android:layout_marginTop="45dp"
-        android:text="@string/sub_total"
-        android:textAppearance="@style/your_cart"
+        android:text="@string/shoppingCart_sub_total"
+        android:textAppearance="@style/shoppingCart_your_cart"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView2" />
@@ -427,8 +404,8 @@
         android:id="@+id/vat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/vat"
-        android:textAppearance="@style/your_cart"
+        android:text="@string/shoppingCart_vat"
+        android:textAppearance="@style/shoppingCart_your_cart"
         app:layout_constraintTop_toBottomOf="@+id/sub_total"
         android:textSize="15sp"
         android:layout_marginStart="19dp"
@@ -441,9 +418,9 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vat"
-        android:text="@string/deliveryCharges"
+        android:text="@string/shoppingCart_deliveryCharges"
         android:textSize="15sp"
-        android:textAppearance="@style/your_cart"
+        android:textAppearance="@style/shoppingCart_your_cart"
         android:layout_marginTop="17dp"
         android:layout_marginStart="19dp"/>
 
@@ -453,9 +430,9 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/deliveryCharges"
-        android:textAppearance="@style/your_cart"
+        android:textAppearance="@style/shoppingCart_your_cart"
         android:textColor="#D33A39"
-        android:text="@string/orderTotal"
+        android:text="@string/shoppingCart_orderTotal"
         android:textSize="15sp"
         android:layout_marginStart="19dp"
         android:layout_marginTop="17dp"/>
@@ -464,19 +441,19 @@
         android:id="@+id/sub_total_amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sub_total_amount"
+        android:text="@string/shoppingCart_sub_total_amount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView2"
         android:layout_marginTop="45dp"
         android:textSize="15sp"
-        android:textAppearance="@style/your_cart"/>
+        android:textAppearance="@style/shoppingCart_your_cart"/>
 
     <TextView
         android:id="@+id/vat_amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/vat_amount"
-        android:textAppearance="@style/your_cart"
+        android:text="@string/shoppingCart_vat_amount"
+        android:textAppearance="@style/shoppingCart_your_cart"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sub_total_amount"
@@ -486,8 +463,8 @@
         android:id="@+id/deliveryChargesAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/dev_charges_amount"
-        android:textAppearance="@style/your_cart"
+        android:text="@string/shoppingCart_dev_charges_amount"
+        android:textAppearance="@style/shoppingCart_your_cart"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vat_amount"
@@ -497,8 +474,8 @@
         android:id="@+id/orderTotalAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/order_total_amount"
-        android:textAppearance="@style/your_cart"
+        android:text="@string/shoppingCart_order_total_amount"
+        android:textAppearance="@style/shoppingCart_your_cart"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/deliveryChargesAmount"
@@ -508,8 +485,8 @@
         android:id="@+id/orderTotalAmount2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/order_total_amount"
-        android:textAppearance="@style/your_cart"
+        android:text="@string/shoppingCart_order_total_amount"
+        android:textAppearance="@style/shoppingCart_your_cart"
         android:textSize="12sp"
         android:layout_marginBottom="5dp"
         android:layout_marginStart="30dp"
@@ -518,26 +495,25 @@
 
     <TextView
         android:id="@+id/itemsOnCart"
-        android:text="@string/itemsOnCart"
+        android:text="@string/shoppingCart_itemsOnCart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginBottom="5dp"
         android:layout_marginStart="30dp"
-        android:textAppearance="@style/your_cart"
+        android:textAppearance="@style/shoppingCart_your_cart"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/orderTotalAmount2"/>
 
     <TextView
         android:id="@+id/secureCheckout"
-        style="@style/your_cart"
+        style="@style/shoppingCart_your_cart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/items_background"
         android:padding="1dp"
         android:paddingTop="7dp"
         android:paddingBottom="7dp"
-        android:text="@string/secureCheckout"
+        android:text="@string/shoppingCart_secureCheckout"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>

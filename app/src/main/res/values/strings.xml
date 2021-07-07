@@ -41,6 +41,41 @@
     <string name="bloodQuality">Blood Quality</string>
     <string name="register">Register</string>
 
+    <string name="zerro">0</string>
+
+    <!-- Verification Fragment -->
+    <string name="verification_email">Verify Your Email Address</string>
+    <string name="verification_text">Please enter the code we sent to your email address</string>
+    <string name="verification_confirm">Confirm</string>
+    <string name="verification_fail">I did not recieve any code! </string>
+    <string name="verification_resend"> RESEND</string>
+    <string name="verification_wrong_email">Wrong email address? </string>
+    <string name="verification_email_update"> UPDATE</string>
+
+    <!-- Shopping Cart Fragment -->
+    <string name="shoppingCart_your_cart">Your cart</string>
+    <string name="shoppingCart_items">2 Items</string>
+    <string name="shoppingCart_perry_lab">Perry\'s Lab</string>
+    <string name="shoppingCart_description">Description</string>
+    <string name="shoppingCart_pints_of">pints of</string>
+    <string name="shoppingCart_two">2</string>
+    <string name="shoppingCart_opositive">O+</string>
+    <string name="shoppingCart_thirty_thousand">N30,000.00</string>
+    <string name="shoppingCart_assured_life">Assured Life</string>
+    <string name="shoppingCart_three">3</string>
+    <string name="shoppingCart_sub_total">Sub-total</string>
+    <string name="shoppingCart_remove">Remove</string>
+    <string name="shoppingCart_edit">Edit</string>
+    <string name="shoppingCart_vat">Value Added Tax (VAT)</string>
+    <string name="shoppingCart_deliveryCharges">Delivery Charges</string>
+    <string name="shoppingCart_orderTotal">Order Total</string>
+    <string name="shoppingCart_sub_total_amount">N75,000.00</string>
+    <string name="shoppingCart_vat_amount">N5.00</string>
+    <string name="shoppingCart_dev_charges_amount">N2,000.00</string>
+    <string name="shoppingCart_order_total_amount">N77,005.00</string>
+    <string name="shoppingCart_itemsOnCart">2 items on cart</string>
+    <string name="shoppingCart_secureCheckout">Secure Checkout</string>
+
     <!--Search Fragment-->
     <string name="searchFragmentTextHeader">Search for blood types, lab info, med lab etc.</string>
     <string name="searchBarHint">Search for blood…</string>
@@ -79,5 +114,9 @@
     <string name="paymentFragmentSelectPaymentCashTitle">Cash on delivery</string>
     <string name="paymentFragmentPlaceOrder">Place Order</string>
     <string name="paymentFragmentPlaceOrderText">N77,500.00</string>
+
+    <!-- Home Fragment -->
+    <string name="homeFragment_intro_text">Blood delivery has never been easier</string>
+    <string name="lab_technician">lab technician working with blood</string>
 
 </resources>
