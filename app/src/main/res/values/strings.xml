@@ -79,5 +79,8 @@
     <string name="paymentFragmentSelectPaymentCashTitle">Cash on delivery</string>
     <string name="paymentFragmentPlaceOrder">Place Order</string>
     <string name="paymentFragmentPlaceOrderText">N77,500.00</string>
+    <string name="null1">null</string>
+    <string name="null2">null2</string>
+    <string name="null3">null3</string>
 
 </resources>
