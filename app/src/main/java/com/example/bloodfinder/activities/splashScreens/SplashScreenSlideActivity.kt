@@ -1,9 +1,7 @@
 package com.example.bloodfinder.activities.splashScreens
 
-import android.graphics.drawable.Drawable
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import com.example.bloodfinder.R
 import com.example.bloodfinder.databinding.ActivitySplashScreenSlideBinding
 
@@ -19,7 +17,7 @@ class SplashScreenSlideActivity : AppCompatActivity() {
         setData()
     }
 
-    fun setData(){
+    private fun setData(){
         val images = arrayListOf(R.drawable.bloodhq, R.drawable.redbloodcells, R.drawable.image24)
         binding.splashScreens.adapter = SplashScreenViewPagerAdapter(images)
         binding.circles.setViewPager(binding.splashScreens)

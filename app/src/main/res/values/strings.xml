@@ -6,7 +6,6 @@
     <string name="password">Password</string>
     <string name="email_address">Email Address</string>
     <!-- TODO: Remove or change this placeholder text -->
-
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="not_a_user_yet">Not a user yet? </string>
     <string name="sign_up">Sign up</string>
@@ -42,6 +41,109 @@
     <string name="bloodQuality">Blood Quality</string>
     <string name="register">Register</string>
 
-    <!-- shared preferenc string -->
-    <string name="app_used_state">com.example.bloodfinder.activities.splashScreens.APP_USE_STATE</string>
+    <string name="zerro">0</string>
+
+    <!-- Verification Fragment -->
+    <string name="verification_email">Verify Your Email Address</string>
+    <string name="verification_text">Please enter the code we sent to your email address</string>
+    <string name="verification_confirm">Confirm</string>
+    <string name="verification_fail">I did not recieve any code! </string>
+    <string name="verification_resend"> RESEND</string>
+    <string name="verification_wrong_email">Wrong email address? </string>
+    <string name="verification_email_update"> UPDATE</string>
+
+    <!-- Shopping Cart Fragment -->
+    <string name="shoppingCart_your_cart">Your cart</string>
+    <string name="shoppingCart_items">2 Items</string>
+    <string name="shoppingCart_perry_lab">Perry\'s Lab</string>
+    <string name="shoppingCart_description">Description</string>
+    <string name="shoppingCart_pints_of">pints of</string>
+    <string name="shoppingCart_two">2</string>
+    <string name="shoppingCart_opositive">O+</string>
+    <string name="shoppingCart_thirty_thousand">N30,000.00</string>
+    <string name="shoppingCart_assured_life">Assured Life</string>
+    <string name="shoppingCart_three">3</string>
+    <string name="shoppingCart_sub_total">Sub-total</string>
+    <string name="shoppingCart_remove">Remove</string>
+    <string name="shoppingCart_edit">Edit</string>
+    <string name="shoppingCart_vat">Value Added Tax (VAT)</string>
+    <string name="shoppingCart_deliveryCharges">Delivery Charges</string>
+    <string name="shoppingCart_orderTotal">Order Total</string>
+    <string name="shoppingCart_sub_total_amount">N75,000.00</string>
+    <string name="shoppingCart_vat_amount">N5.00</string>
+    <string name="shoppingCart_dev_charges_amount">N2,000.00</string>
+    <string name="shoppingCart_order_total_amount">N77,005.00</string>
+    <string name="shoppingCart_itemsOnCart">2 items on cart</string>
+    <string name="shoppingCart_secureCheckout">Secure Checkout</string>
+
+    <!--Search Fragment-->
+    <string name="searchFragmentTextHeader">Search for blood types, lab info, med lab etc.</string>
+    <string name="searchBarHint">Search for blood…</string>
+    <string name="searchFragmentCardPint">Available Pints</string>
+    <string name="searchFragmentCardBloodGroup">Blood Groups</string>
+    <string name="searchFragmentCardManualSearch">Manual Search</string>
+    <string name="searchFragmentItemPrice">Price</string>
+    <string name="searchFragmentItemAmount">Amount</string>
+    <string name="searchFragmentAddButton">Add to cart</string>
+    <string name="searchFragmentItemInfo">Info</string>
+    <string name="searchFragmentItemLab">Lab: Assured Life</string>
+    <string name="searchFragmentItemBloodType">Blood type: O+</string>
+    <string name="searchFragmentItemDonate">Can donate to: O+ B+ A+ AB+</string>
+    <string name="searchFragmentItemReceive">Can receive from: O+ O-</string>
+    <string name="searchFragmentItemPints">Pints Available: 6</string>
+
+    <!--Delivery Address Fragment-->
+    <string name="deliveryFragmentPaymentBtn">Proceed to Payment</string>
+    <string name="deliveryFragmentCardTitle">Work</string>
+    <string name="deliveryFragmentCardName">Perry Lab</string>
+    <string name="deliveryFragmentCardPhone">+234 702 2334 466</string>
+    <string name="deliveryFragmentCardDescription">Description</string>
+    <string name="deliveryFragmentCardPints">2 pints of O+</string>
+    <string name="deliveryFragmentCardAmount">N30,000.00</string>
+    <string name="deliveryFragmentTitle">Checkout (1/3)</string>
+    <string name="deliveryFragmentAddressBtn">Add new address</string>
+    <string name="deliveryFragmentSelectAddress">Select new address</string>
+
+    <!--Payment Fragment-->
+    <string name="paymentFragmentTitle">Checkout (2/3)</string>
+    <string name="paymentFragmentSelectMethod">Select payment method</string>
+    <string name="paymentFragmentSelectPaymentCardTitle">Credit Card</string>
+    <string name="paymentFragmentSelectPaymentCardName">Thompson</string>
+    <string name="paymentFragmentSelectPaymentCardNumber">3456 7684 2345 ****</string>
+    <string name="paymentFragmentSelectPaymentCardExpiry">Expiry: 12/23</string>
+    <string name="paymentFragmentSelectPaymentCashTitle">Cash on delivery</string>
+    <string name="paymentFragmentPlaceOrder">Place Order</string>
+    <string name="paymentFragmentPlaceOrderText">N77,500.00</string>
+    <string name="null1">null</string>
+    <string name="null2">null2</string>
+    <string name="null3">null3</string>
+    <string name="your_cart">Your Cart</string>
+    <string name="items">Items</string>
+    <string name="perry_lab">Perrys Lab</string>
+    <string name="description">Description</string>
+    <string name="two">2</string>
+    <string name="pints_of">pints of</string>
+    <string name="opositive">O+</string>
+    <string name="thirty_thousand">N30,000.00</string>
+    <string name="edit">Edit</string>
+    <string name="remove">Remove</string>
+    <string name="assured_life">Assured Life</string>
+    <string name="three">3</string>
+    <string name="sub_total">Sub-total</string>
+    <string name="vat">Value Added Tax (VAT)</string>
+    <string name="deliveryCharges">Delivery Charges</string>
+    <string name="orderTotal">Order Total</string>
+    <string name="vat_amount">N5.00</string>
+    <string name="itemsOnCart">Items on Cart</string>
+    <string name="secureCheckout">Secure Checkout</string>
+    <string name="order_total_amount">N77,005.00</string>
+    <string name="dev_charges_amount">N2,000.00</string>
+    <string name="sub_total_amount">N75,000.00</string>>
+
+    <!-- Home Fragment -->
+    <string name="homeFragment_intro_text">Blood delivery has never been easier</string>
+    <string name="lab_technician">lab technician working with blood</string>
+
+
+
 </resources>

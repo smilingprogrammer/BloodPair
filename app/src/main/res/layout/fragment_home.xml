@@ -1,15 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.home.fragments.HomeFragment">
+    android:background="@color/primary"
+    android:fillViewport="true">
 
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:padding="@dimen/pad1"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image8"
+            android:contentDescription="@string/lab_technician" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/homeFragment_intro_text"
+            android:layout_gravity="center"
+            style="@style/text"/>
+
+        <LinearLayout
+            android:background="@color/primary_100"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/section_title"
+                android:layout_marginVertical="@dimen/pad1"
+                style="@style/text"
+                tools:text="Section title"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_labs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/home_item_list_section"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
