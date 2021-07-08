@@ -6,6 +6,7 @@
     <string name="password">Password</string>
     <string name="email_address">Email Address</string>
     <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="not_a_user_yet">Not a user yet? </string>
     <string name="sign_up">Sign up</string>
@@ -40,4 +41,7 @@
     <string name="about">About</string>
     <string name="bloodQuality">Blood Quality</string>
     <string name="register">Register</string>
+
+    <!-- shared preferenc string -->
+    <string name="app_used_state">com.example.bloodfinder.activities.splashScreens.APP_USE_STATE</string>
 </resources>
