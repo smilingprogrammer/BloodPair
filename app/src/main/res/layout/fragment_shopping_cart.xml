@@ -32,7 +32,8 @@
                 style="@style/shoppingCart_your_cart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/shoppingCart_your_cart"
+                android:fontFamily="@font/dmsans_regular"
+                android:text="@string/your_cart"
                 android:textAppearance="@style/shoppingCart_your_cart" />
 
             <TextView
@@ -41,6 +42,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                android:background="@drawable/items_background"
+                android:fontFamily="@font/dmsans_regular"
                 android:padding="3dp"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
@@ -81,6 +84,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="11dp"
+                android:fontFamily="@font/dmsans_bold"
                 android:text="@string/shoppingCart_perry_lab"
                 android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="15sp"
@@ -101,7 +105,8 @@
                     android:id="@+id/blood_drop"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="6dp" />
+                    android:padding="6dp"
+                    app:srcCompat="@drawable/ic_blood_drop" />
 
             </androidx.cardview.widget.CardView>
 
@@ -109,6 +114,7 @@
                 android:id="@+id/description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/dmsans_regular"
                 android:text="@string/shoppingCart_description"
                 android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="18sp"
@@ -122,6 +128,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
+                android:fontFamily="@font/dmsans_regular"
                 android:text="@string/shoppingCart_two"
                 android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="12sp"
@@ -137,6 +144,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:fontFamily="@font/dmsans_regular"
                 android:text="@string/shoppingCart_pints_of"
                 android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="12sp"
@@ -148,6 +156,7 @@
                 android:id="@+id/blood_group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/dmsans_regular"
                 android:text="@string/shoppingCart_opositive"
                 android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="12sp"
@@ -161,6 +170,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
+                android:fontFamily="@font/dmsans_regular"
                 android:text="@string/shoppingCart_thirty_thousand"
                 android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="12sp"
@@ -174,7 +184,8 @@
                 android:layout_marginBottom="86dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_more_vert_24" />
 
             <ImageView
                 android:id="@+id/editImg"
@@ -182,7 +193,8 @@
                 android:layout_height="17dp"
                 android:textAlignment="textEnd"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@id/blood_price" />
+                app:layout_constraintStart_toStartOf="@id/blood_price"
+                app:srcCompat="@drawable/ic_baseline_edit_24" />
 
             <TextView
                 android:id="@+id/editTxt"
@@ -201,7 +213,8 @@
                 android:layout_height="17dp"
                 android:layout_marginStart="12dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/editTxt" />
+                app:layout_constraintStart_toEndOf="@+id/editTxt"
+                app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24" />
 
             <TextView
                 android:id="@+id/removeTxt"
@@ -251,6 +264,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="11dp"
+                android:fontFamily="@font/dmsans_bold"
                 android:text="@string/shoppingCart_assured_life"
                 android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="15sp"
@@ -270,7 +284,8 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="6dp" />
+                    android:padding="6dp"
+                    app:srcCompat="@drawable/ic_blood_drop" />
 
             </androidx.cardview.widget.CardView>
 
@@ -278,6 +293,7 @@
                 android:id="@+id/description2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/dmsans_regular"
                 android:text="@string/shoppingCart_description"
                 android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="18sp"
@@ -291,6 +307,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
+                android:fontFamily="@font/dmsans_regular"
                 android:text="@string/shoppingCart_three"
                 android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="12sp"
@@ -306,6 +323,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:fontFamily="@font/dmsans_regular"
                 android:text="@string/shoppingCart_pints_of"
                 android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="12sp"
@@ -317,6 +335,7 @@
                 android:id="@+id/blood_group2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/dmsans_regular"
                 android:text="@string/shoppingCart_opositive"
                 android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="12sp"
@@ -330,6 +349,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
+                android:fontFamily="@font/dmsans_regular"
                 android:text="@string/shoppingCart_thirty_thousand"
                 android:textAppearance="@style/shoppingCart_your_cart"
                 android:textSize="12sp"
@@ -343,7 +363,8 @@
                 android:layout_marginBottom="86dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_more_vert_24" />
 
             <ImageView
                 android:id="@+id/editImg2"
@@ -351,7 +372,8 @@
                 android:layout_height="17dp"
                 android:textAlignment="textEnd"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@id/blood_price2" />
+                app:layout_constraintStart_toStartOf="@id/blood_price2"
+                app:srcCompat="@drawable/ic_baseline_edit_24" />
 
             <TextView
                 android:id="@+id/editTxt2"
@@ -370,7 +392,8 @@
                 android:layout_height="17dp"
                 android:layout_marginStart="12dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/editTxt2" />
+                app:layout_constraintStart_toEndOf="@+id/editTxt2"
+                app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24" />
 
             <TextView
                 android:id="@+id/removeTxt2"
@@ -510,6 +533,7 @@
         style="@style/shoppingCart_your_cart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/items_background"
         android:padding="1dp"
         android:paddingTop="7dp"
         android:paddingBottom="7dp"
