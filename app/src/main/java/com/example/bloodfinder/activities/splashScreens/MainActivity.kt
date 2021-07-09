@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.lifecycle.ViewModelProvider
 import com.example.bloodfinder.R
 import com.example.bloodfinder.activities.auth.LoginActivity
 import java.lang.Boolean.getBoolean
