@@ -143,7 +143,10 @@
     <!-- Home Fragment -->
     <string name="homeFragment_intro_text">Blood delivery has never been easier</string>
     <string name="lab_technician">lab technician working with blood</string>
-
+    <string name="areaName">Central Garden</string>
+    <string name="address">42, MKO Crescent, Maryland</string>
+    <string name="timeAway">10.21</string>
+    <string name="secondsAwayTxt">seconds away!</string>
 
 
 </resources>
