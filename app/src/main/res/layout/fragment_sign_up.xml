@@ -10,14 +10,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:paddingHorizontal="@dimen/pad2"
         android:orientation="vertical">
 
         <ImageView
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
+            android:layout_marginBottom="@dimen/pad1"
+            android:layout_gravity="center"
             android:src="@drawable/bloodhq_logo"
             android:contentDescription="@string/blood_hq_logo"/>
 
@@ -40,14 +40,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/gray"
+                    android:textColorHint="@color/white"
                     android:layout_marginHorizontal="5dp"
                     android:layout_marginBottom="-2dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/hospital_name"
+                        android:id="@+id/etv_hospital_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/gray"
+                        android:textColor="@color/white"
                         android:hint="@string/hospital_name"
                         android:inputType="textEmailAddress" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -56,8 +58,7 @@
 
         </androidx.cardview.widget.CardView>
 
-<!--        Location-->
-
+<!-- Location-->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -77,15 +78,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/gray"
+                    android:textColorHint="@color/white"
                     android:layout_marginHorizontal="5dp"
                     android:layout_marginBottom="-2dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/location"
+                        android:id="@+id/etv_address"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/gray"
-                        android:hint="@string/location"
+                        android:textColor="@color/white"
+                        android:hint="@string/address"
                         android:inputType="text|textCapWords" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -113,14 +116,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/gray"
+                    android:textColorHint="@color/white"
                     android:layout_marginHorizontal="5dp"
                     android:layout_marginBottom="-2dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/email"
+                        android:id="@+id/etv_email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/gray"
+                        android:textColor="@color/white"
                         android:hint="@string/email_address"
                         android:inputType="textEmailAddress" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -150,14 +155,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/gray"
+                    android:textColorHint="@color/white"
                     android:layout_marginHorizontal="5dp"
                     android:layout_marginBottom="-2dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/password"
+                        android:id="@+id/etv_password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/gray"
+                        android:textColor="@color/white"
                         android:hint="@string/password"
                         android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -185,15 +192,17 @@
                     android:id="@+id/password_confirm_container"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColorHint="@color/white"
                     android:background="@color/gray"
                     android:layout_marginHorizontal="5dp"
                     android:layout_marginBottom="-2dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/password_confirm"
+                        android:id="@+id/etv_password_confirm"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/gray"
+                        android:textColor="@color/white"
                         android:hint="@string/password_confirm"
                         android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -202,8 +211,120 @@
 
         </androidx.cardview.widget.CardView>
 
-<!--  Already Have an account text   -->
+        <!--  Phone Number -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad1"
+            android:backgroundTint="@color/secondary"
+            app:cardCornerRadius="@dimen/pad2">
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray"
+                android:layout_margin="2dp"
+                app:cardCornerRadius="@dimen/pad2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray"
+                    android:textColorHint="@color/white"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="-2dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etv_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray"
+                        android:textColor="@color/white"
+                        android:hint="@string/enter_number"
+                        android:inputType="phone" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- City -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad1"
+            android:backgroundTint="@color/secondary"
+            app:cardCornerRadius="@dimen/pad2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray"
+                android:layout_margin="2dp"
+                app:cardCornerRadius="@dimen/pad2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/city_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray"
+                    android:textColorHint="@color/white"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="-2dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etv_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray"
+                        android:textColor="@color/white"
+                        android:hint="@string/city"
+                        android:inputType="text|textCapWords" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- State -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad1"
+            android:backgroundTint="@color/secondary"
+            app:cardCornerRadius="@dimen/pad2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray"
+                android:layout_margin="2dp"
+                app:cardCornerRadius="@dimen/pad2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/state_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray"
+                    android:textColorHint="@color/white"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="-2dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etv_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray"
+                        android:textColor="@color/white"
+                        android:hint="@string/state"
+                        android:inputType="text|textCapWords" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+<!--  Already Have an account text   -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="20dp"
@@ -221,7 +342,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/txv_sign_up"
+                android:id="@+id/txv_sign_in"
                 android:layout_gravity="center"
                 android:text="@string/sign_in2"
                 android:textColor="@color/secondary" />
@@ -243,7 +364,7 @@
                 app:cardCornerRadius="@dimen/pad2">
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/signin_button"
+                    android:id="@+id/signup_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/secondary"

@@ -25,13 +25,11 @@ interface BloodHQApi {
         @Field("state") state: String,
     ): Response<RegistrationResponse>
 
-
-
     companion object {
         operator fun invoke(): BloodHQApi {
             return Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl("https://bloodhq-be.herokuapp.com/api/v1")
+                .baseUrl("https://bloodhq-be.herokuapp.com/api/v1/")
                 .build()
                 .create(BloodHQApi::class.java)
         }
