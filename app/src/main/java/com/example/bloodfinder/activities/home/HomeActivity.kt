@@ -16,6 +16,7 @@ class HomeActivity : AppCompatActivity() {
 
     lateinit var drawerLayout: DrawerLayout
     private lateinit var viewModel: HomeViewModel
+    private lateinit var viewModelFactory: HomeViewModelFactory
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,11 +24,12 @@ class HomeActivity : AppCompatActivity() {
         val binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Setup ViewModel
-        viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
-
         //Get user Details from intent extra and set its value in the Home activity viewModel
-        viewModel.userDetails.value = intent.getSerializableExtra(USER_DETAILS) as LoginResponse
+        var userDetails = intent.getSerializableExtra(USER_DETAILS) as LoginResponse
+        viewModelFactory = HomeViewModelFactory(userDetails)
+
+        // Setup ViewModel
+        viewModel = ViewModelProvider(this, viewModelFactory).get(HomeViewModel::class.java)
 
         // Setup Drawer Navigation
         drawerLayout = binding.drawer

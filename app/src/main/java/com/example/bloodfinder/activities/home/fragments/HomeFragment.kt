@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.bloodfinder.R
@@ -15,8 +16,8 @@ import com.example.bloodfinder.databinding.FragmentProfileBinding
 
 class HomeFragment : Fragment() {
 
-    private lateinit var viewModel: HomeViewModel
     private lateinit var binding: FragmentHomeBinding
+    private val viewModel: HomeViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,18 +27,14 @@ class HomeFragment : Fragment() {
         binding = FragmentHomeBinding.inflate(
             LayoutInflater.from(container?.context)
         )
-        viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
 
-        // Test to see if user details is stored correctly
-        viewModel.userDetails.observe(viewLifecycleOwner, Observer { userDetails ->
-            setHomeText(userDetails.user.fullname)
-        })
+        // User data from view model
+        setHomeText(viewModel.userDetails.user.fullname)
         return binding.root
     }
 
     fun setHomeText(data: String){
         binding.tvUserName.text = data
-        Log.d("HOME FRAGMENT TEXT", "-------------- ${data} ---------")
     }
 
 }
