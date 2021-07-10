@@ -1,5 +1,7 @@
 package com.example.bloodfinder.network.login
 
+import java.io.Serializable
+
 data class Role(
     val created_at: String,
     val description: Any,
@@ -8,4 +10,4 @@ data class Role(
     val name: String,
     val pivot: Pivot,
     val updated_at: String
-)
+): Serializable

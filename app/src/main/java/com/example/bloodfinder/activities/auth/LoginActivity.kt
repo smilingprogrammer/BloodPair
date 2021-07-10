@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
+import com.example.bloodfinder.LoadingDialog
 import com.example.bloodfinder.R
 import com.example.bloodfinder.databinding.ActivityLoginBinding
 

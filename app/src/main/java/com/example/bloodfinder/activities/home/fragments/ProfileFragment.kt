@@ -5,10 +5,16 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
 import com.example.bloodfinder.R
+import com.example.bloodfinder.activities.home.HomeViewModel
+import com.example.bloodfinder.databinding.FragmentHomeBinding
 import com.example.bloodfinder.databinding.FragmentProfileBinding
 
 class ProfileFragment : Fragment() {
+
+    private lateinit var binding: FragmentProfileBinding
+    private val viewModel: HomeViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
