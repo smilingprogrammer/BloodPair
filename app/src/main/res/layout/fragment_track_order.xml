@@ -1,14 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#04172A"
+    android:paddingBottom="25dp"
     tools:context=".activities.home.fragments.TrackOrderFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <androidx.cardview.widget.CardView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mapView"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="#122332"
+        android:layout_height="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/areaName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/areaName"
+                android:textAppearance="@style/shoppingCart_your_cart"
+                android:textSize="20sp"
+                android:fontFamily="@font/dmsans_bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                app:layout_constraintStart_toStartOf="@id/areaName"
+                app:layout_constraintTop_toBottomOf="@id/areaName"
+                android:textAppearance="@style/shoppingCart_your_cart"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/timeAway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/timeAway"
+                app:layout_constraintStart_toStartOf="@id/areaName"
+                app:layout_constraintTop_toBottomOf="@id/address"
+                android:layout_marginTop="24dp"
+                android:textAppearance="@style/shoppingCart_your_cart"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/secondsAwayTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/secondsAwayTxt"
+                app:layout_constraintStart_toEndOf="@id/timeAway"
+                app:layout_constraintTop_toBottomOf="@id/address"
+                android:layout_marginTop="24dp"
+                android:textAppearance="@style/shoppingCart_your_cart"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:id="@+id/imageTrackLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="17dp"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/garden" />
+
+            <TextView
+                android:id="@+id/confirmDelivery"
+                android:background="@drawable/items_background"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/confirm_delivery"
+                android:textAppearance="@style/shoppingCart_your_cart"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
