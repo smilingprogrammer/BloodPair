@@ -1,5 +1,7 @@
 package com.example.bloodfinder.network.login
 
+import java.io.Serializable
+
 data class User(
     val address: String,
     val city: String,
@@ -12,4 +14,4 @@ data class User(
     val roles: List<Role>,
     val state: String,
     val updated_at: String
-)
+): Serializable

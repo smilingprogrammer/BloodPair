@@ -151,10 +151,10 @@
     <string name="address">enter address</string>
 
     <string name="areaName">Central Garden</string>
-    <string name="address">42, MKO Crescent, Maryland</string>
+    <string name="address_hint">42, MKO Crescent, Maryland</string>
     <string name="timeAway">10.21</string>
     <string name="secondsAwayTxt">seconds away!</string>
-
+    <string name="enter_address">address</string>
 
 
 </resources>

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:background="@color/primary"
     android:layout_height="match_parent"
+    android:paddingVertical="50dp"
     android:fillViewport="true">
 
     <LinearLayout
@@ -88,7 +89,7 @@
                         android:layout_height="wrap_content"
                         android:background="@color/gray"
                         android:textColor="@color/white"
-                        android:hint="@string/address"
+                        android:hint="@string/enter_address"
                         android:inputType="text|textCapWords" />
                 </com.google.android.material.textfield.TextInputLayout>
 
