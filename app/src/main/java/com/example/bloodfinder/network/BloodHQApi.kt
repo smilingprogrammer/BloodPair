@@ -1,6 +1,7 @@
 package com.example.bloodfinder.network
 
 import com.example.bloodfinder.network.login.LoginResponse
+import com.example.bloodfinder.network.registration.NewUser
 import com.example.bloodfinder.network.registration.RegistrationResponse
 import retrofit2.Response
 import retrofit2.Retrofit
@@ -17,13 +18,11 @@ interface BloodHQApi {
     ): Response<LoginResponse>
 
     // Register User
-    @FormUrlEncoded
     @POST("register")
-    suspend fun registerUser(
-        @FieldMap params: HashMap<String?, String?>
-    ): Response<RegistrationResponse>
+    suspend fun registerUser(@Body newUser: NewUser): Response<RegistrationResponse>
 
-    // Companion object to automatically invoke BloodHQAou connection when class is called
+
+    // Companion object to automatically invoke BloodHQAPI connection when class is called
     companion object {
         operator fun invoke(): BloodHQApi {
             return Retrofit.Builder()

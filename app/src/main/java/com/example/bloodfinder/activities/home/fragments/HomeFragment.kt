@@ -28,16 +28,7 @@ class HomeFragment : Fragment() {
         )
         viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
 
-        // Test to see if user details is stored correctly
-        viewModel.userDetails.observe(viewLifecycleOwner, Observer { userDetails ->
-            setHomeText(userDetails.user.fullname)
-        })
         return binding.root
-    }
-
-    fun setHomeText(data: String){
-        binding.tvUserName.text = data
-        Log.d("HOME FRAGMENT TEXT", "-------------- ${data} ---------")
     }
 
 }

@@ -40,23 +40,18 @@ class AuthViewModel: ViewModel() {
 
     fun registerUser(newUser: NewUser){
         viewModelScope.launch {
-            val params = HashMap<String?, String?>()
-            params["fullname"] = newUser.fullname
-            params["email"] = newUser.email
-            params["password"] = newUser.password
-            params["password_confirmation"] = newUser.password_confirmation
-            params["phone"] = newUser.phone
-            params["address"] = newUser.address
-            params["city"] = newUser.city
-            params["state"] = newUser.state
+            var registration = BloodHQApi().registerUser(newUser)
 
-            var registration = BloodHQApi().registerUser(params)
-
-            if(registration.isSuccessful){
-                registerUserResponse.value = registration.body()
-            }else{
-                apiError.value = registration.message()
-                Log.d("AUTHMODEL_RESPONSE_TEXT", "${registration.message()}")
+            try {
+                if(registration.isSuccessful){
+                    registerUserResponse.value = registration.body()
+                    Log.d("AUTHMODEL_RESPONSE_TEXT", "::::::::: ::::::::: :::::::: ${registration.body()} ::::::::: :::::::::::::: ::::::::::::")
+                }else{
+                    apiError.value = registration.message()
+                    Log.d("AUTHMODEL_RESPONSE_TEXT", "::::::::: ::::::::: :::::::: $registration ::::::::: :::::::::::::: ::::::::::::")
+                }
+            }catch (e: Exception){
+                Log.d("AUTHMODEL_RESPONSE_TEXT", "::::::::: ::::::::: :::::::: ${e.message} ::::::::: :::::::::::::: ::::::::::::")
             }
         }
     }
