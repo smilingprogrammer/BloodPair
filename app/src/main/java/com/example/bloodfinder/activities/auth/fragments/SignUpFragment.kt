@@ -33,7 +33,7 @@ class SignUpFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(AuthViewModel::class.java)
 
         viewModel.registerUserResponse.observe(viewLifecycleOwner, Observer {res->
-            Toast.makeText(context, "User ${res.user.fullname} added to database", Toast.LENGTH_SHORT)
+            Toast.makeText(context, "User ${res} added to database", Toast.LENGTH_SHORT)
                 .show()
         })
         viewModel.apiError.observe(viewLifecycleOwner, Observer {err->

@@ -33,7 +33,7 @@ class AuthViewModel: ViewModel() {
                 user.value = userLogin.body()
             }else{
                 apiError.value = userLogin.message()
-                Log.d("LOGIN_USER", "------------------- ${userLogin.message()} ---------------------------")
+                Log.d("LOGIN_USER", "------------------- $userLogin ---------------------------")
             }
         }
     }

@@ -8,6 +8,8 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.*
 
+private val baseUrl = "https://bloodhq-be.herokuapp.com/api/v1/"
+
 interface BloodHQApi {
 
     // Log in user
@@ -26,7 +28,7 @@ interface BloodHQApi {
         operator fun invoke(): BloodHQApi {
             return Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl("https://bloodhq-be.herokuapp.com/api/v1/")
+                .baseUrl(baseUrl)
                 .build()
                 .create(BloodHQApi::class.java)
         }
