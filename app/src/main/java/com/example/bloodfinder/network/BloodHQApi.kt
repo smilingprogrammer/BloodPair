@@ -21,7 +21,6 @@ interface BloodHQApi {
     @POST("register")
     suspend fun registerUser(@Body newUser: NewUser): Response<RegistrationResponse>
 
-
     // Companion object to automatically invoke BloodHQAPI connection when class is called
     companion object {
         operator fun invoke(): BloodHQApi {
