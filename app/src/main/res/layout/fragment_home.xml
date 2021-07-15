@@ -11,7 +11,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/pad1"
+        android:paddingTop="@dimen/pad1"
         android:orientation="vertical">
 
         <ImageView
@@ -38,94 +38,36 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/gray"
-            android:id="@+id/labs_section"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/homeFragment_intro_text">
-
-            <TextView
-                android:id="@+id/section_title"
-                style="@style/text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="8dp"
-                android:layout_marginStart="8dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:text="Section title" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="230dp"
-                android:scaleType="centerCrop"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/ic_baseline_arrow_right_alt_24"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/section_title" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rcv_labs"
-                android:layout_width="330dp"
-                android:layout_height="646dp"
-                android:layout_margin="8dp"
-                android:orientation="horizontal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/section_title"
-                tools:listitem="@layout/home_item_list_section" />
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bloods_section"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/gray"
             android:orientation="vertical"
-            android:id="@+id/bloods_section"
+            app:layout_constraintTop_toBottomOf="@+id/homeFragment_intro_text"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/labs_section">
+            app:layout_constraintStart_toStartOf="parent">
 
             <TextView
                 android:id="@+id/section_title2"
                 style="@style/text"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="8dp"
                 android:layout_marginStart="8dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="Section title" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="230dp"
-                android:scaleType="centerCrop"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/ic_baseline_arrow_right_alt_24"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/section_title2" />
+                tools:text="Available Bloods" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rcv_bloods"
-                android:layout_width="330dp"
-                android:layout_height="646dp"
-                android:layout_margin="8dp"
-                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/section_title2"
-                tools:listitem="@layout/home_item_list_section" />
+                tools:listitem="@layout/fragment_search_list_item" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

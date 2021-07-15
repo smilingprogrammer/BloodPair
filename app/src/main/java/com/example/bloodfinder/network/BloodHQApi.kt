@@ -1,5 +1,7 @@
 package com.example.bloodfinder.network
 
+import com.example.bloodfinder.network.getblood.Bloods
+import com.example.bloodfinder.network.getblood.Data
 import com.example.bloodfinder.network.login.LoginResponse
 import com.example.bloodfinder.network.registration.NewUser
 import com.example.bloodfinder.network.registration.RegistrationResponse
@@ -22,6 +24,9 @@ interface BloodHQApi {
     // Register User
     @POST("register")
     suspend fun registerUser(@Body newUser: NewUser): Response<RegistrationResponse>
+
+    @GET("bloods")
+    suspend fun getAllAvailableBloods(): Response<Bloods>
 
     // Companion object to automatically invoke BloodHQAPI connection when class is called
     companion object {
