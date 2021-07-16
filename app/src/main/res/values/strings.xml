@@ -155,6 +155,8 @@
     <string name="timeAway">10.21</string>
     <string name="secondsAwayTxt">seconds away!</string>
     <string name="enter_address">address</string>
+    <string name="recyelcview_blood_image_description">"blood image "</string>
+    <string name="login">login</string>
 
 
 </resources>

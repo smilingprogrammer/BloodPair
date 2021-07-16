@@ -4,63 +4,24 @@
 
     <item
         android:id="@+id/homeFragment"
-        android:icon="@drawable/ic_baseline_home_24"
         android:title="@string/home"
-        app:showAsAction="withText" />
+        app:showAsAction="always" />
     <item
-        android:id="@+id/profileFragment"
-        android:icon="@drawable/ic_baseline_track_changes_24"
-        android:title="@string/profile"
-        app:showAsAction="withText" />
-    <item
-        android:id="@+id/updateProfileFragment"
-        android:icon="@drawable/ic_baseline_track_changes_24"
-        android:title="@string/profileUpdate"
-        app:showAsAction="withText" />
-    <item
-        android:id="@+id/searchFragment"
-        android:icon="@drawable/ic_baseline_track_changes_24"
-        android:title="@string/search"
-        app:showAsAction="withText" />
-    <item
-        android:id="@+id/nav_update"
-        android:icon="@drawable/ic_baseline_update_24"
-        android:title="@string/update_records"
-        app:showAsAction="withText" />
+        android:title="Update Profile"
+        app:showAsAction="always" />
     <item
         android:id="@+id/trackOrderFragment"
-        android:icon="@drawable/ic_baseline_track_changes_24"
         android:title="@string/track_order"
-        app:showAsAction="withText" />
+        app:showAsAction="always" />
     <item
         android:id="@+id/confirmDeliveryFragment"
-        android:icon="@drawable/ic_baseline_confirmation_number_24"
         android:title="@string/confirm_delivery"
-        app:showAsAction="withText" />
+        app:showAsAction="always" />
     <item
-        android:id="@+id/settingsFragment"
-        android:icon="@drawable/ic_baseline_settings_24"
-        android:title="@string/settings"
-        app:showAsAction="withText" />
+        android:title="Settings"
+        app:showAsAction="always" />
     <item
-        android:id="@+id/helpFragment"
-        android:icon="@drawable/ic_baseline_help_outline_24"
-        android:title="@string/help"
-        app:showAsAction="withText"/>
-    <item
-        android:id="@+id/shoppingCartFragment"
-        android:title="@string/shoppingCart"
-        app:showAsAction="withText"/>
-    <item
-        android:id="@+id/deliveryAddressFragment"
-        android:title="@string/deliveryAddress"
-        app:showAsAction="withText"/>
-    <item
-        android:id="@+id/paymentFragment"
-        android:title="@string/payment"
-        app:showAsAction="withText"/>
-    <item
-        android:id="@+id/orderProcessedFragment"
-        android:title="@string/orderProcessed"
-        app:showAsAction="withText"/>
+        android:title="Help"
+        app:showAsAction="always" />
+
 </menu>

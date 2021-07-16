@@ -10,6 +10,7 @@ import com.example.bloodfinder.R
 import com.example.bloodfinder.activities.home.HomeViewModel
 import com.example.bloodfinder.databinding.FragmentHomeBinding
 import com.example.bloodfinder.databinding.FragmentProfileBinding
+import com.example.bloodfinder.network.login.LoginResponse
 
 class ProfileFragment : Fragment() {
 
@@ -25,6 +26,18 @@ class ProfileFragment : Fragment() {
             LayoutInflater.from(container?.context)
         )
 
+        setProfileData(binding, viewModel.userDetails)
+
         return binding.root
+    }
+
+    fun setProfileData(binding: FragmentProfileBinding, userDetails: LoginResponse){
+        binding.apply {
+            tvLabName.text = userDetails.user.fullname
+            tvFullname.text = userDetails.user.fullname
+            tvEmail.text = userDetails.user.email
+            tvPhone.text = userDetails.user.phone
+            tvAddress.text = userDetails.user.address
+        }
     }
 }

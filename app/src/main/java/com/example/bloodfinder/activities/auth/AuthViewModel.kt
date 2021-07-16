@@ -13,6 +13,7 @@ import com.example.bloodfinder.network.BloodHQApi
 import com.example.bloodfinder.network.login.LoginResponse
 import com.example.bloodfinder.network.registration.NewUser
 import com.example.bloodfinder.network.registration.RegistrationResponse
+import com.example.bloodfinder.network.strapi.Labs
 import kotlinx.coroutines.launch
 
 class AuthViewModel: ViewModel() {
@@ -20,6 +21,7 @@ class AuthViewModel: ViewModel() {
     var registerUserResponse = MutableLiveData<RegistrationResponse>()
     var apiError = MutableLiveData<String>()
     var user = MutableLiveData<LoginResponse>()
+    var labs = MutableLiveData<RegistrationResponse>()
 
     fun loginUser(email: String, password: String){
         viewModelScope.launch {
@@ -33,30 +35,25 @@ class AuthViewModel: ViewModel() {
                 user.value = userLogin.body()
             }else{
                 apiError.value = userLogin.message()
-                Log.d("LOGIN_USER", "------------------- ${userLogin.message()} ---------------------------")
+                Log.d("LOGIN_USER", "------------------- $userLogin ---------------------------")
             }
         }
     }
 
     fun registerUser(newUser: NewUser){
         viewModelScope.launch {
-            val params = HashMap<String?, String?>()
-            params["fullname"] = newUser.fullname
-            params["email"] = newUser.email
-            params["password"] = newUser.password
-            params["password_confirmation"] = newUser.password_confirmation
-            params["phone"] = newUser.phone
-            params["address"] = newUser.address
-            params["city"] = newUser.city
-            params["state"] = newUser.state
+            var registration = BloodHQApi().registerUser(newUser)
 
-            var registration = BloodHQApi().registerUser(params)
-
-            if(registration.isSuccessful){
-                registerUserResponse.value = registration.body()
-            }else{
-                apiError.value = registration.message()
-                Log.d("AUTHMODEL_RESPONSE_TEXT", "${registration.message()}")
+            try {
+                if(registration.isSuccessful){
+                    labs.value = registration.body()
+                    Log.d("AUTHMODEL_RESPONSE_TEXT", "::::::::: ::::::::: :::::::: ${registration.body()} ::::::::: :::::::::::::: ::::::::::::")
+                }else{
+                    apiError.value = registration.message()
+                    Log.d("AUTHMODEL_RESPONSE_ELSE", "::::::::: ::::::::: :::::::: $registration ::::::::: :::::::::::::: ::::::::::::")
+                }
+            }catch (e: Exception){
+                Log.d("AUTHMODEL_CATCH", "::::::::: ::::::::: :::::::: ${e.message} ::::::::: :::::::::::::: ::::::::::::")
             }
         }
     }

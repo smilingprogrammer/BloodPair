@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    android:background="@color/primary_700"
+    android:background="#122332"
     android:padding="16dp">
 
     <ImageView
@@ -74,7 +74,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/searchFragmentAddButton"
         app:layout_constraintTop_toBottomOf="@id/searchFragmentItemInfo"
-        tools:text="@string/searchFragmentItemLab" />
+        android:text="@string/searchFragmentItemLab" />
 
     <TextView
         android:id="@+id/searchFragmentItemBloodType"
@@ -100,7 +100,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/searchFragmentAddButton"
         app:layout_constraintTop_toBottomOf="@id/searchFragmentItemBloodType"
-        tools:text="@string/searchFragmentItemDonate" />
+        android:text="@string/searchFragmentItemDonate" />
 
     <TextView
         android:id="@+id/searchFragmentItemReceive"
@@ -113,7 +113,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/searchFragmentAddButton"
         app:layout_constraintTop_toBottomOf="@id/searchFragmentItemDonate"
-        tools:text="@string/searchFragmentItemReceive" />
+        android:text="@string/searchFragmentItemReceive" />
 
     <TextView
         android:id="@+id/searchFragmentItemPints"

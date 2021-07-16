@@ -33,7 +33,7 @@ class SignUpFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(AuthViewModel::class.java)
 
         viewModel.registerUserResponse.observe(viewLifecycleOwner, Observer {res->
-            Toast.makeText(context, "User ${res.user.fullname} added to database", Toast.LENGTH_SHORT)
+            Toast.makeText(context, "User ${res} added to database", Toast.LENGTH_SHORT)
                 .show()
         })
         viewModel.apiError.observe(viewLifecycleOwner, Observer {err->
@@ -59,12 +59,12 @@ class SignUpFragment : Fragment() {
             val email = etvEmail.text.toString()
             val password = etvPassword.text.toString()
             val passwordConfirm = etvPasswordConfirm.text.toString()
-            val phone = etvPhone.text.toString()
+            val phone = etvPhone.text.toString().toLong()
             val address = etvAddress.text.toString()
             val city = etvCity.text.toString()
             val state = etvState.text.toString()
 
-            val newUser = NewUser(fullName, address, email, password, passwordConfirm, phone, city, state)
+            val newUser = NewUser(fullName, email, password, passwordConfirm, phone, address, city, state)
 
             viewModel.registerUser(newUser)
         }
