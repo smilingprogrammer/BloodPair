@@ -13,6 +13,7 @@ import com.example.bloodfinder.network.BloodHQApi
 import com.example.bloodfinder.network.login.LoginResponse
 import com.example.bloodfinder.network.registration.NewUser
 import com.example.bloodfinder.network.registration.RegistrationResponse
+import com.example.bloodfinder.network.strapi.Labs
 import kotlinx.coroutines.launch
 
 class AuthViewModel: ViewModel() {
@@ -20,6 +21,7 @@ class AuthViewModel: ViewModel() {
     var registerUserResponse = MutableLiveData<RegistrationResponse>()
     var apiError = MutableLiveData<String>()
     var user = MutableLiveData<LoginResponse>()
+    var labs = MutableLiveData<RegistrationResponse>()
 
     fun loginUser(email: String, password: String){
         viewModelScope.launch {
@@ -44,14 +46,14 @@ class AuthViewModel: ViewModel() {
 
             try {
                 if(registration.isSuccessful){
-                    registerUserResponse.value = registration.body()
+                    labs.value = registration.body()
                     Log.d("AUTHMODEL_RESPONSE_TEXT", "::::::::: ::::::::: :::::::: ${registration.body()} ::::::::: :::::::::::::: ::::::::::::")
                 }else{
                     apiError.value = registration.message()
-                    Log.d("AUTHMODEL_RESPONSE_TEXT", "::::::::: ::::::::: :::::::: $registration ::::::::: :::::::::::::: ::::::::::::")
+                    Log.d("AUTHMODEL_RESPONSE_ELSE", "::::::::: ::::::::: :::::::: $registration ::::::::: :::::::::::::: ::::::::::::")
                 }
             }catch (e: Exception){
-                Log.d("AUTHMODEL_RESPONSE_TEXT", "::::::::: ::::::::: :::::::: ${e.message} ::::::::: :::::::::::::: ::::::::::::")
+                Log.d("AUTHMODEL_CATCH", "::::::::: ::::::::: :::::::: ${e.message} ::::::::: :::::::::::::: ::::::::::::")
             }
         }
     }

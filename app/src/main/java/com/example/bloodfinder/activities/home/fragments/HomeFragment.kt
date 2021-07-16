@@ -3,15 +3,14 @@ package com.example.bloodfinder.activities.home.fragments
 import android.app.Dialog
 import android.os.Bundle
 import android.util.Log
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.view.WindowManager
 import android.widget.LinearLayout
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.bloodfinder.R
@@ -37,6 +36,7 @@ class HomeFragment : Fragment() {
         binding = FragmentHomeBinding.inflate(
             LayoutInflater.from(container?.context)
         )
+        setHasOptionsMenu(true)
 
         viewModel.getAllAvailableBloods()
 
@@ -48,6 +48,15 @@ class HomeFragment : Fragment() {
         })
 
         return binding.root
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater?.inflate(R.menu.top_menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return NavigationUI.onNavDestinationSelected(item!!, requireView().findNavController()) || super.onOptionsItemSelected(item)
     }
 
     fun populateAvailableBloods(bloods: List<Data>){
