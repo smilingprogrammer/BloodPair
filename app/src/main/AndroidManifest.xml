@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.bloodfinder">
+    package="bloodpair">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -14,16 +14,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BloodFinder">
-        <activity android:name=".activities.home.HomeActivity"></activity>
+        <activity android:name="com.example.bloodpair.activities.home.HomeActivity"></activity>
         <activity
-            android:name=".activities.splashScreens.SplashScreenSlideActivity"
+            android:name="com.example.bloodpair.activities.splashScreens.SplashScreenSlideActivity"
             android:theme="@style/Theme.BloodFinderSplash" />
         <activity
-            android:name=".activities.auth.LoginActivity"/>
+            android:name="com.example.bloodpair.activities.auth.LoginActivity"/>
         <activity
-            android:name=".activities.splashScreens.MainActivity"
+            android:name="com.example.bloodpair.activities.splashScreens.MainActivity"
             android:launchMode="singleTask"
-            android:theme="@style/Theme.BloodFinderSplash">
+            android:theme="@style/Theme.BloodFinderSplash"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

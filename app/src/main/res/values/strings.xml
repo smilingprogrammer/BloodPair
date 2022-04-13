@@ -1,7 +1,7 @@
 <resources>
     <!-- Shared preference -->
-    <string name="app_used_state" >com.example.bloodfinder.activities.splashScreens.APP_USE_STATE</string>
-    <string name="app_name">BloodFinder</string>
+    <string name="app_used_state" >bloodpair.activities.splashScreens.APP_USE_STATE</string>
+    <string name="app_name">BloodPair</string>
     <string name="splash_screen">Splash Screen</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="sign_in">SIGN IN</string>

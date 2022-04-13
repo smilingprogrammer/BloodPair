@@ -10,7 +10,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.bloodfinder.activities.home.fragments.HomeFragment"
+        android:name="bloodpair.activities.home.fragments.HomeFragment"
         android:label="Home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -40,22 +40,22 @@
     </fragment>
     <fragment
         android:id="@+id/updateProfileFragment"
-        android:name="com.example.bloodfinder.activities.home.fragments.UpdateProfileFragment"
+        android:name="bloodpair.activities.home.fragments.UpdateProfileFragment"
         android:label="Update Profile"
         tools:layout="@layout/fragment_update_profile" />
     <fragment
         android:id="@+id/trackOrderFragment"
-        android:name="com.example.bloodfinder.activities.home.fragments.TrackOrderFragment"
+        android:name="bloodpair.activities.home.fragments.TrackOrderFragment"
         android:label="Track Order"
         tools:layout="@layout/fragment_track_order" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.bloodfinder.activities.home.fragments.ProfileFragment"
+        android:name="bloodpair.activities.home.fragments.ProfileFragment"
         android:label="Profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.example.bloodfinder.activities.home.fragments.SearchFragment"
+        android:name="bloodpair.activities.home.fragments.SearchFragment"
         android:label="Search"
         tools:layout="@layout/fragment_search" >
         <action
@@ -64,22 +64,22 @@
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.example.bloodfinder.activities.home.fragments.SettingsFragment"
+        android:name="bloodpair.activities.home.fragments.SettingsFragment"
         android:label="Settings"
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/helpFragment"
-        android:name="com.example.bloodfinder.activities.home.fragments.HelpFragment"
+        android:name="bloodpair.activities.home.fragments.HelpFragment"
         android:label="Help"
         tools:layout="@layout/fragment_help" />
     <fragment
         android:id="@+id/confirmDeliveryFragment"
-        android:name="com.example.bloodfinder.activities.home.fragments.ConfirmDeliveryFragment"
+        android:name="bloodpair.activities.home.fragments.ConfirmDeliveryFragment"
         android:label="Confirm Delivery"
         tools:layout="@layout/fragment_confirm_delivery" />
     <fragment
         android:id="@+id/shoppingCartFragment"
-        android:name="com.example.bloodfinder.activities.home.fragments.cart.ShoppingCartFragment"
+        android:name="bloodpair.activities.home.fragments.cart.ShoppingCartFragment"
         android:label="Shopping Cart"
         tools:layout="@layout/fragment_shopping_cart" >
         <action
@@ -88,7 +88,7 @@
     </fragment>
     <fragment
         android:id="@+id/deliveryAddressFragment"
-        android:name="com.example.bloodfinder.activities.home.fragments.cart.DeliveryAddressFragment"
+        android:name="bloodpair.activities.home.fragments.cart.DeliveryAddressFragment"
         android:label="Delivery Address"
         tools:layout="@layout/fragment_delivery_address" >
         <action
@@ -97,7 +97,7 @@
     </fragment>
     <fragment
         android:id="@+id/paymentFragment"
-        android:name="com.example.bloodfinder.activities.home.fragments.cart.PaymentFragment"
+        android:name="bloodpair.activities.home.fragments.cart.PaymentFragment"
         android:label="Payment"
         tools:layout="@layout/fragment_payment" >
         <action
@@ -106,7 +106,7 @@
     </fragment>
     <fragment
         android:id="@+id/orderProcessedFragment"
-        android:name="com.example.bloodfinder.activities.home.fragments.cart.OrderProcessedFragment"
+        android:name="bloodpair.activities.home.fragments.cart.OrderProcessedFragment"
         android:label="Order Processed"
         tools:layout="@layout/fragment_order_processed" >
         <action
@@ -115,6 +115,6 @@
     </fragment>
     <activity
         android:id="@+id/homeActivity"
-        android:name="com.example.bloodfinder.activities.home.HomeActivity"
+        android:name="bloodpair.activities.home.HomeActivity"
         android:label="HomeActivity" />
 </navigation>
